@@ -7,8 +7,14 @@ def convertCadeur(cad):
 def convertCadusd(cad):
     return round(c.convert('CAD' ,'USD', cad), 2)
 
+def convertCadjpy(cad):
+    return round(c.convert('CAD' ,'JPY', cad), 2)
 
+def convertCadbrl(cad):
+    return round(c.convert('CAD' ,'BRL', cad), 2)
 print(convertCadeur(160), "Euros")
-print(convertCadeur(160), "US dollars")
+print(convertCadusd(160), "US dollars")
+print(convertCadjpy(160), "Yen")
+print(convertCadbrl(160), "Real brasileiro")
 
 
